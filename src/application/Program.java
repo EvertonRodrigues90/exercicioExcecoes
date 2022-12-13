@@ -1,8 +1,10 @@
 package application;
 
+import java.util.InputMismatchException;
 import java.util.Scanner;
 
 import model.entities.Account;
+import model.exceptions.DomainException;
 
 public class Program {
 
@@ -30,8 +32,11 @@ public class Program {
 		
 		System.out.println("New balance: " + account.getBalance());
 		}
-		catch(IllegalArgumentException e) {
+		catch(DomainException e) {
 		System.out.println(e.getMessage());
+		}catch(InputMismatchException n) {
+			System.out.println("Unexpected error");
+			
 		}
 		
 		
