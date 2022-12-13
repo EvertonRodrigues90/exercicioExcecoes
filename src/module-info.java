@@ -1,0 +1,9 @@
+/**
+ * 
+ */
+/**
+ * @author evertonrodrigues
+ *
+ */
+module exercicioExcecoes {
+}
